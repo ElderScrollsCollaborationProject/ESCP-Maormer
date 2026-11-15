@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <CultureDef>
+        <defName>ESCP_Culture_Maormer</defName>
+        <label>Maormer</label>
+        <description>The culture of Pyandonea, older than the Empire and built on exile. Sea Elves keep the manners of ancient Aldmeris, a fleet, and a very long list of what they are owed by Summerset.</description>
+        <iconPath>UI/Cultures/ESCP_Culture_Imperial</iconPath>
+        <pawnNameMaker>ESCP_Maormer_Namer_Male</pawnNameMaker>
+        <pawnNameMakerFemale>ESCP_Maormer_Namer_Female</pawnNameMakerFemale>
+        <allowedPlaceTags>
+            <li>OriginSpacer</li>
+        </allowedPlaceTags>
+        <styleItemTags>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>Urban</tag>
+                <baseWeight>3</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+        <thingStyleCategories MayRequire="Ludeon.RimWorld.Ideology">
+            <li>
+                <category>Rustic</category>
+                <priority>2</priority>
+            </li>
+        </thingStyleCategories>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_NamerIdeo_Maormer</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_NamerDeity_Maormer</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_DeityTypeMaker_Maormer</deityTypeMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_NamerFestival_Maormer</festivalNameMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Maormer</leaderTitleMaker>
+    </CultureDef>
+
+    <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>ESCP_Style_Maormer</defName>
+        <label>Maormer</label>
+        <iconPath>UI/Cultures/ESCP_Culture_Imperial</iconPath>
+        <ritualVisualEffectDef>Rustic</ritualVisualEffectDef>
+        <thingDefStyles />
+    </StyleCategoryDef>
+
+    <RulePackDef>
+        <defName>ESCP_Maormer_Namer_Male</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[ESCP_Maormer_Names_Male] [ESCP_Maormer_Names_Last]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>ESCP_Maormer_Names_Male->Names/ESCP_Maormer_Names_Male</li>
+                <li>ESCP_Maormer_Names_Last->Names/ESCP_Maormer_Names_Last</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>ESCP_Maormer_Namer_Female</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[ESCP_Maormer_Names_Female] [ESCP_Maormer_Names_Last]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>ESCP_Maormer_Names_Female->Names/ESCP_Maormer_Names_Female</li>
+                <li>ESCP_Maormer_Names_Last->Names/ESCP_Maormer_Names_Last</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>ESCP_LeaderTitleMaker_Maormer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->King of Pyandonea</li>
+                <li>r_leaderTitle->Serpent Lord</li>
+                <li>r_leaderTitle->Ancient King</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>ESCP_NamerIdeo_Maormer</defName>
+        <include>
+            <li>GlobalUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>hyphenPrefix->Sea</li>
+                <li>hyphenPrefix->Tide</li>
+                <li>hyphenPrefix->Serpent</li>
+                <li>hyphenPrefix->Storm</li>
+                <li>r_ideoName->The Eternal King</li>
+                <li>r_ideoName->Cult of Orgnum</li>
+                <li>r_ideoName->The Serpent's Coil</li>
+                <li>r_ideoName->The Drowned Oath</li>
+                <li>r_ideoAdjective->Pyandonean</li>
+                <li>r_ideoAdjective->Serpent</li>
+                <li>r_memberName->Votary</li>
+                <li>r_memberName->Sea-sworn</li>
+                <li>r_memberName->Kingsman</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>ESCP_NamerDeity_Maormer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityName->Orgnum</li>
+                <li>r_deityName->Satakal</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>ESCP_DeityTypeMaker_Maormer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityType->the deathless king</li>
+                <li>r_deityType->the Serpent God</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>ESCP_NamerFestival_Maormer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_ritualName->[festivalName]</li>
+                <li>festivalName->Orgnum's Reign</li>
+                <li>festivalName->Night of the Serpent</li>
+                <li>festivalName->The Banishment Vigil</li>
+                <li>festivalName->First Tide</li>
+                <li>festivalName->The Burning of Summerset</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

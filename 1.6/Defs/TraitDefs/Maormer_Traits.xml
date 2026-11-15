@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Maormer_SerpentCaller</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Serpent Caller</label>
+                <description>This one has spent many years learning to command sea serpents without being eaten. Their magic comes quickly and without much ceremony, and when they sing the old call a reef viper rises to fight for them.</description>
+                <statOffsets>
+                    <ESCP_MagickaMax>20</ESCP_MagickaMax>
+                </statOffsets>
+                <skillGains>
+                    <Intellectual>2</Intellectual>
+                </skillGains>
+                <abilities>
+                    <li>ESCP_Ability_Maormer_CallSerpent</li>
+                </abilities>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Maormer_Viper</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>sea viper</label>
+                <description>Trained aboard a raiding ship, where nobody asks twice. They fight fast and don't panic when the deck tilts.</description>
+                <statOffsets>
+                    <MeleeDodgeChance>4</MeleeDodgeChance>
+                </statOffsets>
+                <skillGains>
+                    <Social>2</Social>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ESCP_Trait_Maormer_Altmerbane</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Altmer-hater</label>
+                <description>Raised on old wrongs and new raids. They have strong views on Summerset, and share them.</description>
+                <statOffsets>
+                    <PainShockThreshold>0.05</PainShockThreshold>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+</Defs>

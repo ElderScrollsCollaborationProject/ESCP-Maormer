@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>ESCP_Faction_Maormer_Player</defName>
+        <label>Pyandonean Exiles</label>
+        <description>A crew of Sea Elves who have left Pyandonea, or been left behind by it. The ship is gone, the grudge is not, and the land will have to do for now.</description>
+        <isPlayer>true</isPlayer>
+        <techLevel>Medieval</techLevel>
+        <basicMemberKind>ESCP_Pawnkind_Maormer_Settler</basicMemberKind>
+        <pawnSingular>Maormer</pawnSingular>
+        <pawnsPlural>Maormer</pawnsPlural>
+        <leaderTitle>Captain</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/ESCP_MaormerSettlement</factionIconPath>
+        <colorSpectrum>
+            <li>(0.35, 0.6, 0.8)</li>
+        </colorSpectrum>
+        <xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+            <xenotypeChances>
+                <ESCP_Xenotype_Maormer>1</ESCP_Xenotype_Maormer>
+            </xenotypeChances>
+        </xenotypeSet>
+        <allowedCultures>
+            <li>ESCP_Culture_Maormer</li>
+        </allowedCultures>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Maormer_Child</li>
+                    <li>ESCP_Backstory_Maormer_Citizen</li>
+                    <li>ESCP_Backstory_Maormer_Military</li>
+                    <li>ESCP_Backstory_Maormer_Mage</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+    </FactionDef>
+
+</Defs>

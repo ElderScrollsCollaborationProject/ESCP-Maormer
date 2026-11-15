@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Maormer_SnakeMagic</defName>
+        <label>snake magic</label>
+        <description>The Maormer tame sea serpents with old magic that runs in the blood. Carriers hold plenty of magicka and can call up a serpent's speed for a short time.</description>
+        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <statOffsets>
+            <ESCP_MagickaMax>25</ESCP_MagickaMax>
+            <ESCP_MagickaRegen>0.05</ESCP_MagickaRegen>
+        </statOffsets>
+        <abilities>
+            <li>ESCP_Ability_Maormer_Fury</li>
+        </abilities>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Maormer_Seafarer</defName>
+        <label>seafarer's blood</label>
+        <description>Generations aboard ship and in cold water have left Sea Elves resistant to sickness and quick to recover.</description>
+        <iconPath>UI/Icons/Genes/Gene_Robust</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>101</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statOffsets>
+            <ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+            <InjuryHealingFactor>0.1</InjuryHealingFactor>
+            <ComfyTemperatureMax>4</ComfyTemperatureMax>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Maormer_Grudge</defName>
+        <label>old grudge</label>
+        <description>A Sea Elf raised on stories of Summerset is not much of a conversationalist, but is very hard to frighten.</description>
+        <iconPath>UI/Icons/Genes/Gene_PsychicBonding</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>102</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statOffsets>
+            <SocialImpact>-0.15</SocialImpact>
+            <PainShockThreshold>0.1</PainShockThreshold>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Maormer_Leviathan</defName>
+        <label>leviathan</label>
+        <description>Carriers are huge and hard to kill, and they hit like a falling mast. They move slowly, eat quickly, and lose their temper easily.</description>
+        <iconPath>UI/Icons/Genes/Gene_Robust</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <MeleeDamageFactor>1.5</MeleeDamageFactor>
+        </statFactors>
+        <statOffsets>
+            <MoveSpeed>-1</MoveSpeed>
+            <EatingSpeed>0.5</EatingSpeed>
+            <ToxicResistance>0.25</ToxicResistance>
+            <InjuryHealingFactor>0.15</InjuryHealingFactor>
+            <SocialImpact>-0.2</SocialImpact>
+            <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>
+    </GeneDef>
+
+</Defs>

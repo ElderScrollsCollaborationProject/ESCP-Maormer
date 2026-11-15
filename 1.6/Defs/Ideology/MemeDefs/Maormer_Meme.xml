@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <MemeDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>ESCP_Meme_SeaOath</defName>
+        <label>Sea Oath</label>
+        <description>We were cast out of Aldmeris and we did not forget it. The King endures, the fleet sails, and Summerset will burn. Everything else is detail.</description>
+        <iconPath>UI/Structures/ESCP_OriginDivinesEight</iconPath>
+        <groupDef>Misc</groupDef>
+        <impact>2</impact>
+        <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+        <hiddenInChooseMemes>true</hiddenInChooseMemes>
+        <requireOne>
+            <li>
+                <li>Cannibalism_Abhorrent</li>
+            </li>
+            <li>
+                <li>Slavery_Disapproved</li>
+                <li>Slavery_Acceptable</li>
+            </li>
+            <li>
+                <li>Execution_RespectedIfGuilty</li>
+            </li>
+            <li>
+                <li>Research_Fast</li>
+            </li>
+            <li>
+                <li>DrugUse_MedicalOrSocial</li>
+            </li>
+        </requireOne>
+    </MemeDef>
+
+</Defs>

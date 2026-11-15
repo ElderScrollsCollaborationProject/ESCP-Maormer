@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>ESCP_Faction_Maormer_Kingdom</defName>
+        <label>Kingdom of Pyandonea</label>
+        <description>Colonies of Sea Elves under the rule of a king who has been on the throne longer than anyone can verify. They are unwelcoming even by Mer standards, but will trade with anyone other than an Altmer.</description>
+        <colorSpectrum>
+            <li>(0.35, 0.6, 0.8)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <pawnSingular>Maormer</pawnSingular>
+        <pawnsPlural>Maormer</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <settlementGenerationWeight>0.3</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>King of Pyandonea</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/ESCP_MaormerSettlement</factionIconPath>
+        <techLevel>Medieval</techLevel>
+        <fixedName>Kingdom of Pyandonea</fixedName>
+        <allowedCultures>
+            <li>ESCP_Culture_Maormer</li>
+        </allowedCultures>
+
+        <royalTitleTags>
+            <li>ESCP_Title_Maormer</li>
+        </royalTitleTags>
+        <royalFavorLabel>Royal Favor</royalFavorLabel>
+        <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>The Eternal King</ideoName>
+        <ideoDescription>Orgnum has ruled Pyandonea for thousands of years, and his subjects find this reason enough to worship him. The fleet, the serpents and the weather all answer to the King.</ideoDescription>
+        <deityPresets>
+            <li>
+                <nameType><name>Orgnum</name><type>the deathless king</type></nameType>
+                <gender>Male</gender>
+                <iconPath>UI/Deities/DeityGeneric</iconPath>
+            </li>
+            <li>
+                <nameType><name>Satakal</name><type>the Serpent God</type></nameType>
+                <gender>Male</gender>
+                <iconPath>UI/Deities/ESCP_DeitySatakal</iconPath>
+            </li>
+        </deityPresets>
+        <styles>
+            <li>ESCP_Style_Maormer</li>
+        </styles>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ESCP_Meme_SeaOath</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_Maormer_Child</li>
+                    <li>ESCP_Backstory_Maormer_Citizen</li>
+                    <li>ESCP_Backstory_Maormer_Military</li>
+                    <li>ESCP_Backstory_Maormer_Mage</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+
+        <caravanTraderKinds>
+            <li>ESCP_Caravan_Maormer_Trader</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>ESCP_Caravan_Maormer_Trader</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>ESCP_Caravan_Maormer_Trader</li>
+        </baseTraderKinds>
+
+        <allowedArrivalTemperatureRange>-20~50</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Maormer_Melee>10</ESCP_Pawnkind_Maormer_Melee>
+                    <ESCP_Pawnkind_Maormer_Leviathan>1</ESCP_Pawnkind_Maormer_Leviathan>
+                    <ESCP_Pawnkind_Maormer_Ranged>7</ESCP_Pawnkind_Maormer_Ranged>
+                    <ESCP_Pawnkind_Maormer_Mage>4</ESCP_Pawnkind_Maormer_Mage>
+                    <ESCP_Pawnkind_Maormer_Captain>3</ESCP_Pawnkind_Maormer_Captain>
+                    <ESCP_Pawnkind_Maormer_Elite>2</ESCP_Pawnkind_Maormer_Elite>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Maormer_Citizen>15</ESCP_Pawnkind_Maormer_Citizen>
+                    <ESCP_Pawnkind_Maormer_Merchant>6</ESCP_Pawnkind_Maormer_Merchant>
+                    <ESCP_Pawnkind_Maormer_Noble>4</ESCP_Pawnkind_Maormer_Noble>
+                    <ESCP_Pawnkind_Maormer_Mage>3</ESCP_Pawnkind_Maormer_Mage>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <ESCP_Pawnkind_Maormer_Trader>1</ESCP_Pawnkind_Maormer_Trader>
+                    <ESCP_Pawnkind_Maormer_Quartermaster>1</ESCP_Pawnkind_Maormer_Quartermaster>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>3</Alpaca>
+                </carriers>
+                <guards>
+                    <ESCP_Pawnkind_Maormer_Melee>8</ESCP_Pawnkind_Maormer_Melee>
+                    <ESCP_Pawnkind_Maormer_Leviathan>1</ESCP_Pawnkind_Maormer_Leviathan>
+                    <ESCP_Pawnkind_Maormer_Ranged>5</ESCP_Pawnkind_Maormer_Ranged>
+                    <ESCP_Pawnkind_Maormer_Elite>1</ESCP_Pawnkind_Maormer_Elite>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <ESCP_Pawnkind_Maormer_Citizen>8</ESCP_Pawnkind_Maormer_Citizen>
+                    <ESCP_Pawnkind_Maormer_Melee>10</ESCP_Pawnkind_Maormer_Melee>
+                    <ESCP_Pawnkind_Maormer_Leviathan>1</ESCP_Pawnkind_Maormer_Leviathan>
+                    <ESCP_Pawnkind_Maormer_Ranged>8</ESCP_Pawnkind_Maormer_Ranged>
+                    <ESCP_Pawnkind_Maormer_Mage>4</ESCP_Pawnkind_Maormer_Mage>
+                    <ESCP_Pawnkind_Maormer_Elite>2</ESCP_Pawnkind_Maormer_Elite>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+
+        <modExtensions Inherit="False">
+            <li Class="ESCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Kingdom of Pyandonea</newLabel>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_PermanentlyHostileTo">
+                <hostileFactionDefs>
+                    <li MayRequire="Rick.ESCP.Altmer">ESCP_Faction_Aldmeri_Dominion</li>
+                    <li MayRequire="Rick.ESCP.Altmer">ESCP_Faction_Thalmor</li>
+                </hostileFactionDefs>
+            </li>
+            <li Class="ESCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+</Defs>

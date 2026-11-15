@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Orgnum</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Maormer_King</pawnKind>
+        <faction>ESCP_Faction_Maormer_Kingdom</faction>
+        <xenotype>ESCP_Xenotype_Maormer</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1500</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Orgnum</firstName>
+                <lastName>Pyandonea</lastName>
+                <nickname>the Deathless</nickname>
+                <gender>Male</gender>
+                <age>280</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(210, 220, 230)</hairColor>
+                <hairDef>Long</hairDef>
+                <headTypeDef>ESCP_HeadMer_Male_Narrow_Normal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Vinsha</defName>
+        <pawnKind>ESCP_Unique_Pawnkind_Maormer_SerpentCaller</pawnKind>
+        <faction>ESCP_Faction_Maormer_Pirates</faction>
+        <xenotype>ESCP_Xenotype_Maormer</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1500</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Vinsha</firstName>
+                <lastName>Viper</lastName>
+                <nickname>Serpent Caller</nickname>
+                <gender>Female</gender>
+                <age>140</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(190, 205, 220)</hairColor>
+                <hairDef>Long</hairDef>
+                <headTypeDef>ESCP_HeadMer_Female_Narrow_Normal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+</Defs>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="ESCP_Maormer_UniqueCharacterBase" ParentName="ESCP_MaormerkindBase" Abstract="true">
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <apparelMoney>9999</apparelMoney>
+        <gearHealthRange>10</gearHealthRange>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <weaponMoney>9999</weaponMoney>
+        <maxGenerationAge>300</maxGenerationAge>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Maormer_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Maormer_King</defName>
+        <label>King of Pyandonea</label>
+        <factionLeader>true</factionLeader>
+        <combatPower>260</combatPower>
+        <weaponTags>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelTags>
+            <li>MedievalBasic</li>
+            <li>MedievalMilitary</li>
+            <li>Cape</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Maormer_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Maormer_Military</li>
+                    <li>ESCP_Backstory_Maormer_Mage</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Maormer_SerpentCaller>0</ESCP_Trait_Maormer_SerpentCaller>
+            <ESCP_Trait_Maormer_Altmerbane>0</ESCP_Trait_Maormer_Altmerbane>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_Maormer_UniqueCharacterBase">
+        <defName>ESCP_Unique_Pawnkind_Maormer_SerpentCaller</defName>
+        <label>Serpent Caller</label>
+        <factionLeader>true</factionLeader>
+        <combatPower>230</combatPower>
+        <weaponTags>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelTags>
+            <li>MedievalBasic</li>
+            <li>MedievalMilitary</li>
+            <li>Cape</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Maormer_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Maormer_Military</li>
+                    <li>ESCP_Backstory_Maormer_Mage</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <forcedTraits>
+            <ESCP_Trait_Maormer_SerpentCaller>0</ESCP_Trait_Maormer_SerpentCaller>
+            <ESCP_Trait_Maormer_Altmerbane>0</ESCP_Trait_Maormer_Altmerbane>
+        </forcedTraits>
+    </PawnKindDef>
+
+</Defs>

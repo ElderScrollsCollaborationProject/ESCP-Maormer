@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>ESCP_Projectile_SerpentCall</defName>
+        <label>serpent call</label>
+        <thingClass>ESCP.Spawners.Projectile_SpawnPawns</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Needle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <color>(0.35, 0.75, 0.85)</color>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Blunt</damageDef>
+            <damageAmountBase>1</damageAmountBase>
+            <speed>40</speed>
+        </projectile>
+        <modExtensions>
+            <li Class="ESCP.Spawners.PawnSpawnExtension">
+                <kindToSpawn>ESCP_ReefViperKind</kindToSpawn>
+                <spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+                <message>A reef viper rises to answer the serpent call.</message>
+                <messageTypeDef>NeutralEvent</messageTypeDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

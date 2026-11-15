@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>ESCP - Altmer</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+                <ThoughtDef>
+                    <defName>ESCP_Opinion_AltmerbaneJusticiar</defName>
+                    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+                    <workerClass>ESCP_RaceTools.ThoughtWorker_UniversalTraitOpinion</workerClass>
+                    <validWhileDespawned>true</validWhileDespawned>
+                    <modExtensions>
+                        <li Class="ESCP_RaceTools.ThoughtDefProperties">
+                            <traitA>ESCP_Trait_Maormer_Altmerbane</traitA>
+                            <traitB>ESCP_Trait_Altmer_Justiciar</traitB>
+                        </li>
+                    </modExtensions>
+                    <stages>
+                        <li>
+                            <label>Altmerbane and Justiciar</label>
+                            <baseOpinionOffset>-20</baseOpinionOffset>
+                        </li>
+                    </stages>
+                    <nullifyingTraits>
+                        <li>Kind</li>
+                    </nullifyingTraits>
+                </ThoughtDef>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

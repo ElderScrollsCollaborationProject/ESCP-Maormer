@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_MaormerKingdom_Enlist_Letter_Title>Sworn to Pyandonea</ESCP_MaormerKingdom_Enlist_Letter_Title>
+    <ESCP_MaormerKingdom_Enlist_Letter_Label>The colony now serves King Orgnum. Maormer ships will pay and feed those who sail under the serpent banner.</ESCP_MaormerKingdom_Enlist_Letter_Label>
+    <ESCP_MaormerKingdom_Enlist_Button_Label>Swear to King Orgnum</ESCP_MaormerKingdom_Enlist_Button_Label>
+    <ESCP_MaormerKingdom_Enlist_Button_Desc>Take service with the Sea Elves of Pyandonea and their ageless king.</ESCP_MaormerKingdom_Enlist_Button_Desc>
+    <ESCP_MaormerKingdom_Enlist_Requrements_Not_Satisfied>The Maormer do not trust outsiders, and they do not trust you. Standing: {0}.</ESCP_MaormerKingdom_Enlist_Requrements_Not_Satisfied>
+    <ESCP_MaormerKingdom_Enlisted_To_Hostile_Faction>Pyandonea will not take the oath of an enemy.</ESCP_MaormerKingdom_Enlisted_To_Hostile_Faction>
+    <ESCP_MaormerKingdom_Enlisted_With_Key>Sworn to King Orgnum</ESCP_MaormerKingdom_Enlisted_With_Key>
+    <ESCP_MaormerKingdom_Missions_Label>Fleet orders</ESCP_MaormerKingdom_Missions_Label>
+    <ESCP_MaormerKingdom_Missions_Desc>See what the fleet needs done.</ESCP_MaormerKingdom_Missions_Desc>
+    <ESCP_MaormerKingdom_Menu_Missions_Desc>Orders from the Maormer fleet. Paid when done.</ESCP_MaormerKingdom_Menu_Missions_Desc>
+    <ESCP_MaormerKingdom_Menu_Missions_Select_Quest>Select a job</ESCP_MaormerKingdom_Menu_Missions_Select_Quest>
+    <ESCP_MaormerKingdom_Menu_Missions_Start_Quest>Accept</ESCP_MaormerKingdom_Menu_Missions_Start_Quest>
+    <ESCP_MaormerKingdom_Menu_Missions_Collect_Bounty>Collect</ESCP_MaormerKingdom_Menu_Missions_Collect_Bounty>
+    <ESCP_MaormerKingdom_Provisions_Label>Draw ship stores</ESCP_MaormerKingdom_Provisions_Label>
+    <ESCP_MaormerKingdom_Provisions_Desc>Salted fish and fresh water from the fleet.</ESCP_MaormerKingdom_Provisions_Desc>
+    <ESCP_MaormerKingdom_Storage_Label>Ship's hold</ESCP_MaormerKingdom_Storage_Label>
+    <ESCP_MaormerKingdom_Storage_Desc>Leave goods aboard a Maormer ship.</ESCP_MaormerKingdom_Storage_Desc>
+    <ESCP_MaormerKingdom_Resign_Menu_Text>Leave King Orgnum's service? The Maormer hold grudges for a long time.</ESCP_MaormerKingdom_Resign_Menu_Text>
+    <ESCP_MaormerKingdom_Resign_Letter_Title>Left Pyandonea's service</ESCP_MaormerKingdom_Resign_Letter_Title>
+    <ESCP_MaormerKingdom_Resign_Letter_Label>The colony has left the service of King Orgnum.</ESCP_MaormerKingdom_Resign_Letter_Label>
+    <ESCP_MaormerKingdom_Resign_Button_Label>Leave the king's service</ESCP_MaormerKingdom_Resign_Button_Label>
+    <ESCP_MaormerKingdom_Resign_Button_Desc>End your oath to Pyandonea.</ESCP_MaormerKingdom_Resign_Button_Desc>
+    <ESCP_MaormerKingdom_Kick_Out_Letter_Title>Dismissed by Pyandonea</ESCP_MaormerKingdom_Kick_Out_Letter_Title>
+    <ESCP_MaormerKingdom_Kick_Out_Label_Title>King Orgnum has no further use for the colony.</ESCP_MaormerKingdom_Kick_Out_Label_Title>
+    <ESCP_MaormerKingdom_Salary_Label>Collect your pay</ESCP_MaormerKingdom_Salary_Label>
+    <ESCP_MaormerKingdom_Salary_Desc>Coin from the king's treasury.</ESCP_MaormerKingdom_Salary_Desc>
+    <ESCP_MaormerKingdom_Work_0_Label>Sail with the fleet</ESCP_MaormerKingdom_Work_0_Label>
+    <ESCP_MaormerKingdom_Work_0_Desc>Crew a Maormer ship along the coast.</ESCP_MaormerKingdom_Work_0_Desc>
+    <ESCP_MaormerKingdom_Work_1_Label>Learn the serpent songs</ESCP_MaormerKingdom_Work_1_Label>
+    <ESCP_MaormerKingdom_Work_1_Desc>Learn how the Maormer call and tame sea serpents.</ESCP_MaormerKingdom_Work_1_Desc>
+
+</LanguageData>

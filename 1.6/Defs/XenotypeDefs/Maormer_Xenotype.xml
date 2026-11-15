@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XenotypeDef ParentName="ESCP_BaseXenotype_MerColouredEyes">
+        <defName>ESCP_Xenotype_Maormer</defName>
+        <label>Maormer</label>
+        <iconPath>UI/Icons/Xenotypes/Neanderthal</iconPath>
+        <description>The Sea Elves of Pyandonea, descended from Aldmer who rebelled and were banished from the old homeland. Their skin has faded from gold to pale shades of white and blue, their eyes are pale or nearly colorless, and they have spent thousands of years wanting Summerset to burn. They swim well, shrug off poison and tame sea serpents with snake magic.</description>
+        <descriptionShort>Pale, serpent-taming sea elves who hate the Altmer above all else.</descriptionShort>
+        <genes>
+            <li>ESCP_Gene_Maormer_SnakeMagic</li>
+            <li>ESCP_Gene_Maormer_Seafarer</li>
+            <li>ESCP_Gene_Maormer_Grudge</li>
+            <li>Skin_LightGray</li>
+            <li>ToxResist_Partial</li>
+            <li>Beard_NoBeardOnly</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef ParentName="ESCP_BaseXenotype_MerColouredEyes">
+        <defName>ESCP_Xenotype_MaormerLeviathan</defName>
+        <label>Maormer leviathan</label>
+        <iconPath>UI/Icons/Xenotypes/Neanderthal</iconPath>
+        <description>Very rarely a Maormer is born huge and half feral. Other races take leviathans for the children of a Maormer and a sea serpent, and the Maormer don't correct them. They are slow, heal fast and hit far harder than any elf should, and they can barely hold a conversation.</description>
+        <descriptionShort>Huge, half-feral Maormer rumored to have sea serpent blood.</descriptionShort>
+        <genes>
+            <li>ESCP_Gene_Maormer_SnakeMagic</li>
+            <li>ESCP_Gene_Maormer_Seafarer</li>
+            <li>ESCP_Gene_Maormer_Grudge</li>
+            <li>Skin_LightGray</li>
+            <li>ToxResist_Partial</li>
+            <li>Beard_NoBeardOnly</li>
+            <li>ESCP_Gene_Maormer_Leviathan</li>
+            <li>Robust</li>
+        </genes>
+    </XenotypeDef>
+
+</Defs>

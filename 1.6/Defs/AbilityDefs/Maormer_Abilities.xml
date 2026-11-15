@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AbilityDef>
+        <defName>ESCP_Ability_Maormer_Fury</defName>
+        <label>Serpent's Fury</label>
+        <description>The caster calls on the serpent in their blood, moving and striking with its speed for half a minute.</description>
+        <iconPath>UI/Abilities/BulletShield</iconPath>
+        <aiCanUse>true</aiCanUse>
+        <hostile>false</hostile>
+        <targetRequired>false</targetRequired>
+        <showOnCharacterCard>true</showOnCharacterCard>
+        <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <statBases>
+            <Ability_Duration>30</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <requireLineOfSight>false</requireLineOfSight>
+            <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+            <warmupTime>1.0</warmupTime>
+            <range>0</range>
+            <targetable>false</targetable>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>ESCP_Hediff_Maormer_Fury</hediffDef>
+                <onlyApplyToSelf>true</onlyApplyToSelf>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="ESCP.Core.Magic.AbilityExtension_SpellAI">
+                <role>SelfBuff</role>
+                <buffHediff>ESCP_Hediff_Maormer_Fury</buffHediff>
+            </li>
+        </modExtensions>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>ESCP_Ability_Maormer_CallSerpent</defName>
+        <label>call serpent</label>
+        <description>The caster sings the old Pyandonean call and throws it at a target. A reef viper answers, rising where the call lands and fighting for the caller. Serpents are slow to answer twice, and the call can only be made every few days.</description>
+        <iconPath>Things/Pawn/Animal/ESCP_ReefViper/ESCP_ReefViper_Male_east</iconPath>
+        <aiCanUse>true</aiCanUse>
+        <hostile>true</hostile>
+        <showOnCharacterCard>true</showOnCharacterCard>
+        <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+        <cooldownTicksRange>180000</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <requireLineOfSight>true</requireLineOfSight>
+            <range>19.9</range>
+            <warmupTime>2.5</warmupTime>
+            <soundCast>Pawn_Cobra_Call</soundCast>
+            <targetParams>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityLaunchProjectile">
+                <projectileDef>ESCP_Projectile_SerpentCall</projectileDef>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="ESCP.Core.Magic.AbilityExtension_SpellAI">
+                <role>Attack</role>
+            </li>
+        </modExtensions>
+    </AbilityDef>
+
+</Defs>

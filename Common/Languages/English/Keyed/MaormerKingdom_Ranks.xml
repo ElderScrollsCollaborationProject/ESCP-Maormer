@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_MaormerKingdom>Shipmaster:</ESCP_Rank_Mentor_MaormerKingdom>
+    <ESCP_Rank_Promote_MaormerKingdom>Raise in the Fleet</ESCP_Rank_Promote_MaormerKingdom>
+    <ESCP_Rank_Promoted_Text_MaormerKingdom>King Orgnum's fleet takes note. {0} now serves as {1}.</ESCP_Rank_Promoted_Text_MaormerKingdom>
+    <ESCP_Rank_Rally_Title_MaormerKingdom>{0} calls the fleet to battle</ESCP_Rank_Rally_Title_MaormerKingdom>
+    <ESCP_Rank_Rally_Text_MaormerKingdom>{0} sounds the conch, and every one of {1} on the field strikes like a storm off Pyandonea.</ESCP_Rank_Rally_Text_MaormerKingdom>
+    <ESCP_Rank_InspectionComplete_Commended_MaormerKingdom>{0} checks {1}'s blade and finds no trace of rust or salt.</ESCP_Rank_InspectionComplete_Commended_MaormerKingdom>
+    <ESCP_Rank_InspectionComplete_Reprimanded_MaormerKingdom>{0} checks {1}'s blade and finds it eaten by the sea.</ESCP_Rank_InspectionComplete_Reprimanded_MaormerKingdom>
+    <ESCP_Rank_PunishmentAssigned_MaormerKingdom>{0} sends {1} to scrape barnacles from the hulls.</ESCP_Rank_PunishmentAssigned_MaormerKingdom>
+
+</LanguageData>
