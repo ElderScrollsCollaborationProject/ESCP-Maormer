@@ -158,6 +158,23 @@
                     <li>RandomDrop</li>
                 </arrivalModes>
             </li>
+            <li Class="ESCP.Factions.FactionExtension_NamedSettlement">
+                <settlementNames>
+                    <li>Blackwake</li>
+                    <li>Keel Rock</li>
+                    <li>Viper Cove</li>
+                    <li>Dreadsail Anchorage</li>
+                    <li>Wreck Point</li>
+                    <li>Shark Fjord</li>
+                </settlementNames>
+                <preferredHilliness />
+                <allowedBiomes>
+                    <li>TemperateForest</li>
+                    <li>BorealForest</li>
+                </allowedBiomes>
+                <clustered>true</clustered>
+                <coastal>true</coastal>
+            </li>
         </modExtensions>
     </FactionDef>
 

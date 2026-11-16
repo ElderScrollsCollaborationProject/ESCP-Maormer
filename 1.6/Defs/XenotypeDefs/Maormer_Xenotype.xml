@@ -15,6 +15,11 @@
             <li>ToxResist_Partial</li>
             <li>Beard_NoBeardOnly</li>
         </genes>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.RaceProperties">
+                <leatherDef>ESCP_LeatherMaormer</leatherDef>
+            </li>
+        </modExtensions>
     </XenotypeDef>
 
     <XenotypeDef ParentName="ESCP_BaseXenotype_MerColouredEyes">
@@ -33,6 +38,11 @@
             <li>ESCP_Gene_Maormer_Leviathan</li>
             <li>Robust</li>
         </genes>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.RaceProperties">
+                <leatherDef>ESCP_LeatherMaormer</leatherDef>
+            </li>
+        </modExtensions>
     </XenotypeDef>
 
 </Defs>
